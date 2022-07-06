@@ -1,0 +1,46 @@
+.gridrow {
+  border: 1px solid black;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.cell {
+  border: 1px solid black;
+  flex-grow: 1;
+  height: 50px;
+  width: 100%;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hover {
+  background-color: blue;
+}
+
+button {
+  padding: 1em 1em;
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0px none white;
+  border-radius: 10px;
+  width: 200px;
+  align-self: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
