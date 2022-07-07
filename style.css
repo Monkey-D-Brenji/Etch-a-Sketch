@@ -1,10 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .gridrow {
-  border: 1px solid black;
   display: flex;
-  flex-grow: 1;
   justify-content: center;
 }
 
+.gridrow,
 .cell {
   border: 1px solid black;
   flex-grow: 1;
@@ -23,11 +27,7 @@
   flex-direction: column;
   height: 500px;
   width: 500px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
+  border: 1px solid black;
 }
 
 .hover {
@@ -40,10 +40,11 @@ button {
   color: white;
   font-size: 16px;
   font-weight: bold;
-  border: 0px none white;
+  border: none;
   border-radius: 10px;
   width: 200px;
   align-self: center;
+  margin-top: 10px;
 }
 
 body {
