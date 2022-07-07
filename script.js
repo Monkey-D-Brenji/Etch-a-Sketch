@@ -40,8 +40,9 @@ function makeGrid(row, cell) {
 
 btn.addEventListener("click", () => {
   let gridNum = prompt("Enter a Number");
-  if (gridNum > 100) {
-    while (gridNum > 100) {
+  gridNum = parseInt(gridNum);
+  if (gridNum > 100 || gridNum === NaN) {
+    while (gridNum > 100 || gridNum === NaN) {
       gridNum = prompt("Enter a Number less than 100");
     }
   }
