@@ -8,7 +8,7 @@
 .cell {
   border: 1px solid black;
   flex-grow: 1;
-  height: 50px;
+  height: 20px;
   width: 100%;
 }
 

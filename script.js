@@ -25,17 +25,32 @@ function gridColumn(num) {
   }
 }
 
+function clearGrid() {
+  const gridRows = document.querySelectorAll(".gridrow");
+  gridRows.forEach((element) => {
+    element.remove();
+  });
+}
+
 function makeGrid(row, cell) {
+  clearGrid();
   gridRow(row);
   gridColumn(cell);
 }
 
-makeGrid(16, 16);
+btn.addEventListener("click", () => {
+  let gridNum = prompt("Enter a Number");
+  if (gridNum > 100) {
+    while (gridNum > 100) {
+      gridNum = prompt("Enter a Number less than 100");
+    }
+  }
+  makeGrid(gridNum, gridNum);
+  const cells = document.querySelectorAll(".cell");
 
-const cells = document.querySelectorAll(".cell");
-
-cells.forEach(function (element) {
-  element.addEventListener("mouseover", () => {
-    element.classList.add("hover");
+  cells.forEach(function (element) {
+    element.addEventListener("mouseover", () => {
+      element.classList.add("hover");
+    });
   });
 });
